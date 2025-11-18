@@ -1,20 +1,30 @@
 <script setup lang="ts">
 import {ref, onMounted} from 'vue'
 import {useRoute} from 'vue-router'
+// import {
+//   getPostDetail,
+//   addComment,
+//   togglePostThumb,
+//   togglePostFavour,
+//   type Post,
+//   getCommentList,
+//   deleteComment,
+//   likeComment
+// } from '@/api/post'
 import {
   getPostDetail,
   addComment,
   togglePostThumb,
   togglePostFavour,
-  type Post,
   getCommentList,
   deleteComment,
   likeComment
-} from '@/api/post'
+} from '@/api/post/index'
 import {ElMessage, ElMessageBox} from 'element-plus'
 import {formatDate} from '@/utils/format'
 import {ChatDotRound, Pointer, Star, Delete, Close, Watermelon} from '@element-plus/icons-vue'
 import {useUserStore} from '@/stores/modules/user'
+import type { Post } from '@/api/post/type'
 
 const route = useRoute()
 const apiUrl = import.meta.env.VITE_API_URL || ''

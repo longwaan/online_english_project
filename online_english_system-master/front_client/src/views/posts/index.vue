@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import {ref, onMounted, computed} from 'vue'
 import {useRouter} from 'vue-router'
-import {getPostList, addPost, type Post} from '@/api/post'
+// import {getPostList, addPost, type Post} from '@/api/post'
+import { getPostList,addPost } from '@/api/post/index'
+import type { Post } from '@/api/post/type'
 import {ElMessage} from 'element-plus'
 import {formatDate} from '@/utils/format'
 import {Plus, View, Star} from '@element-plus/icons-vue'
