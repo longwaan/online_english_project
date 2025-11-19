@@ -16,10 +16,13 @@ import {
   Timer,
   Check
 } from '@element-plus/icons-vue'
-import { getCourseDetail, type CourseVO, type ChapterVO, COURSE_STATUS } from '@/api/course'
+// import { getCourseDetail, type CourseVO, type ChapterVO, COURSE_STATUS } from '@/api/course'
+import { getCourseDetail } from '@/api/course/index'
+import { COURSE_STATUS, type CourseVO } from '@/api/course/type'
 import { getCourseStudyRecord, type StudyRecordVO } from '@/api/statistics'
 import type { StudyRecordAddRequest } from '@/api/studyRecord'
 import { addStudyRecord, updateStudyRecordTime } from '@/api/studyRecord'
+
 
 const route = useRoute()
 const router = useRouter()

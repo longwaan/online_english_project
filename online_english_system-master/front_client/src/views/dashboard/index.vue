@@ -20,11 +20,14 @@ import {
   Share,
   Refresh
 } from '@element-plus/icons-vue'
-import { getCourseList, type CourseVO } from '@/api/course'
+// import { getCourseList, type CourseVO } from '@/api/course'
+
 import axios from 'axios'
 import { getStudyOverview } from '@/api/statistics'
 import { ElMessage } from 'element-plus'
 import {getDailyQuote} from '@/api/dict.ts'
+import type { CourseVO } from '@/api/course/type'
+import { getCourseList } from '@/api/course/index'
 
 const router = useRouter()
 const userStore = useUserStore()
