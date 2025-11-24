@@ -1,8 +1,10 @@
 import {defineStore} from 'pinia'
 import {ref} from 'vue'
-import {login, logout} from '@/api/login'
-import type {LoginParams} from '@/api/login'
+// import {login, logout} from '@/api/login'
+// import type {LoginParams} from '@/api/login'
 import {ElMessage} from 'element-plus'
+import type { LoginParams } from '@/api/login/type';
+import { login, logout } from '@/api/login/index';
 
 
 interface UserInfo {

@@ -427,10 +427,13 @@ import {
   ChatLineRound, Edit, Warning, InfoFilled, Timer,
   Opportunity, CircleCheck, Finished, EditPen, Delete
 } from '@element-plus/icons-vue'
-import { getUserAnswerList, getUserAnswerDetail, getExamAnswerSummary, deleteUserAnswer } from '@/api/userAnswer'
-import { getExamList } from '@/api/exam'
-import type { UserAnswer } from '@/api/userAnswer'
+// import { getUserAnswerList, getUserAnswerDetail, getExamAnswerSummary, deleteUserAnswer } from '@/api/userAnswer'
+// import { getExamList } from '@/api/exam'
+// import type { UserAnswer } from '@/api/userAnswer'
 import defaultAvatar from '@/assets/avatar.jpg'
+import { getExamList } from '@/api/exam/index'
+import type { UserAnswer } from '@/api/userAnswer/type'
+import { deleteUserAnswer, getExamAnswerSummary, getUserAnswerDetail, getUserAnswerList } from '@/api/userAnswer/index'
 
 // 状态定义
 const loading = ref(false)

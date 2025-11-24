@@ -21,14 +21,16 @@ import {
   Connection
 } from '@element-plus/icons-vue'
 import { useRouter } from 'vue-router'
-import {
-  updateUserInfo,
-  changePassword,
-  uploadAvatar,
-  getUserIp
-} from '@/api/user'
+// import {
+//   updateUserInfo,
+//   changePassword,
+//   uploadAvatar,
+//   getUserIp
+// } from '@/api/user'
 import axios from "axios";
-import { getStudyDetail } from '@/api/statistics'
+// import { getStudyDetail } from '@/api/statistics'
+import { changePassword, getUserIp, updateUserInfo, uploadAvatar } from '@/api/user/index'
+import { getStudyDetail } from '@/api/statistics/index'
 
 const userStore = useUserStore()
 const userInfo = computed(() => userStore.userInfo)

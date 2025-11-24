@@ -15,7 +15,9 @@ import {
   Plus,
   VideoPlay
 } from '@element-plus/icons-vue'
-import { getCourseList, type CourseVO } from '@/api/course'
+import { getCourseList } from '@/api/course/index'
+import type { CourseVO } from '@/api/course/type'
+// import { getCourseList, type CourseVO } from '@/api/course'
 
 const router = useRouter()
 

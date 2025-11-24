@@ -126,16 +126,18 @@ import {
 } from '@element-plus/icons-vue'
 import * as echarts from 'echarts'
 import type { EChartsType } from 'echarts'
-import { 
-  getScoreStatistics,
-  getStudyTimeStatistics,
-  getVocabularyFrequency,
-  getProgressStatistics,
-  type ScoreStatistics,
-  type StudyTimeStatistics,
-  type VocabularyFrequency,
-  type ProgressStatistics
-} from '@/api/statistics'
+import type { ProgressStatistics, ScoreStatistics, StudyTimeStatistics, VocabularyFrequency } from '@/api/statistics/type'
+import { getProgressStatistics, getScoreStatistics, getStudyTimeStatistics, getVocabularyFrequency } from '@/api/statistics/index'
+// import { 
+//   getScoreStatistics,
+//   getStudyTimeStatistics,
+//   getVocabularyFrequency,
+//   getProgressStatistics,
+//   type ScoreStatistics,
+//   type StudyTimeStatistics,
+//   type VocabularyFrequency,
+//   type ProgressStatistics
+// } from '@/api/statistics'
 
 const userStore = useUserStore()
 

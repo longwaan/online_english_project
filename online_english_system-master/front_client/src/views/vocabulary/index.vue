@@ -19,21 +19,27 @@ import {
   VideoPlay,
   Picture
 } from '@element-plus/icons-vue'
-import {
-  getVocabularyList,
-  type VocabularyVO,
-  type DifficultyLevel,
-  type VocabularyType
-} from '@/api/vocabulary'
-import {
-  checkVocabularyRecord,
-  addStudyRecord,
-  updateStudyRecordProgress,
-  getStudyRecordById,
-  type StudyRecordAddRequest
-} from '@/api/studyRecord'
-import { getTranslation } from '@/api/dict'
+// import {
+//   getVocabularyList,
+//   type VocabularyVO,
+//   type DifficultyLevel,
+//   type VocabularyType
+// } from '@/api/vocabulary'
+// import {
+//   checkVocabularyRecord,
+//   addStudyRecord,
+//   updateStudyRecordProgress,
+//   getStudyRecordById,
+//   type StudyRecordAddRequest
+// } from '@/api/studyRecord'
+// import { getTranslation } from '@/api/dict'
+
 import { useRouter } from 'vue-router'
+import { getTranslation } from '@/api/dict/index'
+import type { VocabularyVO } from '@/api/vocabulary/type'
+import { getVocabularyList } from '@/api/vocabulary/index'
+import { addStudyRecord, checkVocabularyRecord, getStudyRecordById, updateStudyRecordProgress } from '@/api/studyRecord/index'
+import type { StudyRecordAddRequest } from '@/api/studyRecord/type'
 
 // 词汇列表
 const vocabularyList = ref<VocabularyVO[]>([])

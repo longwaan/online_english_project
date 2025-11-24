@@ -137,17 +137,18 @@ import { ref, reactive, onMounted, watch, onUnmounted } from 'vue'
 import { Search, Plus, Upload, UserFilled, InfoFilled, Warning } from '@element-plus/icons-vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import type { FormInstance, UploadProps } from 'element-plus'
-import {
-  getUserList,
-  updateUser,
-  uploadAvatar,
-  addUser,
-  deleteUser,
-  getUserDetail,
-  resetUserPassword
-} from '@/api/user'
+// import {
+//   getUserList,
+//   updateUser,
+//   uploadAvatar,
+//   addUser,
+//   deleteUser,
+//   getUserDetail,
+//   resetUserPassword
+// } from '@/api/user'
 import defaultAvatar from '@/assets/avatar.jpg'
 import { useUserStore } from "@/stores/modules/user.ts";
+import { addUser, deleteUser, getUserDetail, getUserList, resetUserPassword, updateUser } from '@/api/user/index'
 // 表格数据
 const loading = ref(false)
 const searchQuery = ref('')

@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-import type { BaseResponse } from '@/types'
+import type { BaseResponse } from '@/types/index'
 
 // 学习记录请求参数
 export interface StudyRecordAddRequest {

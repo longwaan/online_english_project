@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-import type { BaseResponse } from '@/types'
+import type { BaseResponse } from '@/types/index'
 
 // 考试得分统计
 export interface ScoreStatistics {

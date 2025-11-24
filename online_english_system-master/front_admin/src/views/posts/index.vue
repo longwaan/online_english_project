@@ -263,22 +263,24 @@ import {
   ChatLineRound,
   Delete, Watermelon
 } from '@element-plus/icons-vue'
-import {
-  getPostList,
-  getPostDetail,
-  addPost,
-  updatePost,
-  deletePost,
-  getCommentList,
-  addComment,
-  deleteComment,
-  likeComment,
-  unlikeComment,
-  togglePostThumb,
-  togglePostFavour
-} from '@/api/post'
-import type { Post } from '@/api/post'
+// import {
+//   getPostList,
+//   getPostDetail,
+//   addPost,
+//   updatePost,
+//   deletePost,
+//   getCommentList,
+//   addComment,
+//   deleteComment,
+//   likeComment,
+//   unlikeComment,
+//   togglePostThumb,
+//   togglePostFavour
+// } from '@/api/post'
+// import type { Post } from '@/api/post'
 import defaultAvatar from '@/assets/avatar.jpg'
+import type { Post } from '@/api/post/type'
+import { addComment, addPost, deleteComment, deletePost, getCommentList, getPostList, likeComment, togglePostFavour, togglePostThumb, unlikeComment, updatePost } from '@/api/post/index'
 
 // 状态定义
 const loading = ref(false)

@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-import type { BaseResponse } from '@/types'
+import type { BaseResponse } from '@/types/index'
 
 // 试题类型定义
 export interface Question {

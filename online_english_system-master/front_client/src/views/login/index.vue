@@ -131,7 +131,8 @@ import {useRouter, useRoute} from 'vue-router'
 import {useUserStore} from '@/stores/modules/user.ts'
 import loginImage from '@/assets/login.svg'
 import registerImage from '@/assets/register.svg'
-import {login, register} from '@/api/login'
+import { login, register } from '@/api/login/index'
+// import {login, register} from '@/api/login'
 
 const router = useRouter()
 const route = useRoute()

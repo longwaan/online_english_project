@@ -220,19 +220,24 @@ import {
 } from '@element-plus/icons-vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import type { FormInstance, UploadProps } from 'element-plus'
-import {
-  getChapterList,
-  getChaptersByCourseId,
-  getChapterDetail,
-  addChapter,
-  updateChapter,
-  deleteChapter,
-  uploadChapterCover,
-  uploadChapterVideo,
-  type Chapter,
-  type ChapterInfo
-} from '@/api/chapter'
-import { getCourseList } from '@/api/course'
+// import {
+//   getChapterList,
+//   getChaptersByCourseId,
+//   getChapterDetail,
+//   addChapter,
+//   updateChapter,
+//   deleteChapter,
+//   uploadChapterCover,
+//   uploadChapterVideo,
+//   type Chapter,
+//   type ChapterInfo
+// } from '@/api/chapter'
+
+// import { getCourseList } from '@/api/course'
+
+import type { Chapter, Course } from '@/api/chapter/type'
+import { addChapter, deleteChapter, getChapterDetail, getChapterList, updateChapter } from '@/api/chapter/index'
+import { getCourseList } from '@/api/course/index'
 
 // 状态定义
 const loading = ref(false)

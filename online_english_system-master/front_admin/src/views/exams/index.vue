@@ -980,18 +980,20 @@ import { ref, reactive, onMounted, watch, computed } from 'vue'
 import { Search, Plus, Timer, Document, VideoPlay, Calendar, Edit, Close, Select, Trophy, Warning } from '@element-plus/icons-vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import type { FormInstance } from 'element-plus'
-import {
-  getExamList,
-  getExamDetail,
-  addExam,
-  updateExam,
-  deleteExam,
-  addQuestion,
-  updateQuestion,
-  deleteQuestion,
-  type Exam,
-  type Question
-} from '@/api/exam'
+import type { Exam, Question } from '@/api/exam/type'
+import { addExam, addQuestion, deleteExam, deleteQuestion, getExamDetail, getExamList, updateExam, updateQuestion } from '@/api/exam/index'
+// import {
+//   getExamList,
+//   getExamDetail,
+//   addExam,
+//   updateExam,
+//   deleteExam,
+//   addQuestion,
+//   updateQuestion,
+//   deleteQuestion,
+//   type Exam,
+//   type Question
+// } from '@/api/exam'
 
 // 状态定义
 const loading = ref(false)

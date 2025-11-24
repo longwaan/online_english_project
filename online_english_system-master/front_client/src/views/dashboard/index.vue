@@ -23,11 +23,14 @@ import {
 // import { getCourseList, type CourseVO } from '@/api/course'
 
 import axios from 'axios'
-import { getStudyOverview } from '@/api/statistics'
+// import { getStudyOverview } from '@/api/statistics'
 import { ElMessage } from 'element-plus'
-import {getDailyQuote} from '@/api/dict.ts'
+// import {getDailyQuote} from '@/api/dict.ts'
+
 import type { CourseVO } from '@/api/course/type'
 import { getCourseList } from '@/api/course/index'
+import { getDailyQuote } from '@/api/dict/index'
+import { getStudyOverview } from '@/api/statistics/index'
 
 const router = useRouter()
 const userStore = useUserStore()

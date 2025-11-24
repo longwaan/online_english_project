@@ -251,10 +251,14 @@ import { ref, reactive, onMounted, watch } from 'vue'
 import type { FormInstance } from 'element-plus'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { Search, Plus, Edit, Delete, More, Connection, VideoPlay, Microphone } from '@element-plus/icons-vue'
-import { getVocabularyList, addVocabulary, updateVocabulary, deleteVocabulary, searchVocabulary } from '@/api/vocabulary'
-import type { Vocabulary } from '@/api/vocabulary'
-import { getDictList, getDictVoice, getTranslation } from '@/api/dict'
+// import { getVocabularyList, addVocabulary, updateVocabulary, deleteVocabulary, searchVocabulary } from '@/api/vocabulary'
+// import type { Vocabulary } from '@/api/vocabulary'
+// import { getDictList, getDictVoice, getTranslation } from '@/api/dict'
+
 import axios from 'axios'
+import { getDictList, getTranslation } from '@/api/dict/index'
+import type { Vocabulary } from '@/api/vocabulary/type'
+import { addVocabulary, deleteVocabulary, getVocabularyList, searchVocabulary, updateVocabulary } from '@/api/vocabulary/index'
 // 状态定义
 const loading = ref(false)
 const currentPage = ref(1)

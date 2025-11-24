@@ -586,14 +586,17 @@
 
 <script setup lang="ts">
 import {ref, onMounted, watch, computed} from 'vue'
-import {ElMessage, ElMessageBox} from 'element-plus'
+import {ElMessage, ElMessageBox, type FormInstance} from 'element-plus'
 import {
   Search, Reading, View, User, Calendar, Timer,
   Histogram, Flag, Document, Trophy, Aim, Edit, Plus, Delete, Close, Check, Loading, Select, Microphone
 } from '@element-plus/icons-vue'
-import {getStudyRecordList, deleteStudyRecord, createStudyRecord} from '@/api/studyRecord'
-import type {StudyRecord, CreateStudyRecordParams} from '@/api/studyRecord'
+// import {getStudyRecordList, deleteStudyRecord, createStudyRecord} from '@/api/studyRecord'
+// import type {StudyRecord, CreateStudyRecordParams} from '@/api/studyRecord'
+
 import defaultAvatar from '@/assets/avatar.jpg'
+import type { CreateStudyRecordParams, StudyRecord } from '@/api/studyRecord/type'
+import { createStudyRecord, deleteStudyRecord,getStudyRecordList } from '@/api/studyRecord/index'
 
 // 状态定义
 const loading = ref(false)

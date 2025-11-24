@@ -441,7 +441,9 @@ import {
   CircleCheckFilled,
   List
 } from '@element-plus/icons-vue'
-import { getExamList, getExamQuestions, addUserAnswer, batchAddUserAnswers, getExamAnswers, type Exam, type Question, getUserAnswerDetail, type UserAnswerVO } from '@/api/exam'
+import type { Exam, Question, UserAnswerVO } from '@/api/exam/type'
+import { addUserAnswer, batchAddUserAnswers, getExamList, getExamQuestions, getUserAnswerDetail } from '@/api/exam/index'
+// import { getExamList, getExamQuestions, addUserAnswer, batchAddUserAnswers, getExamAnswers, type Exam, type Question, getUserAnswerDetail, type UserAnswerVO } from '@/api/exam'
 
 // 页面状态
 const currentMode = ref<'list' | 'exam'>('list')

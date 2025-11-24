@@ -174,13 +174,14 @@ import { Search, Plus, InfoFilled } from '@element-plus/icons-vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import type { FormInstance, UploadProps } from 'element-plus'
 import { debounce } from 'lodash-es'
-import {
-  getCourseList,
-  addCourse,
-  updateCourse,
-  deleteCourse,
-  uploadCover
-} from '@/api/course'
+import { deleteCourse, getCourseList, updateCourse,addCourse } from '@/api/course/index'
+// import {
+//   getCourseList,
+//   addCourse,
+//   updateCourse,
+//   deleteCourse,
+//   uploadCover
+// } from '@/api/course'
 
 const baseUrl=import.meta.env.VITE_BASE_URL
 

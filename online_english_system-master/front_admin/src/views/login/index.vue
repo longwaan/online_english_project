@@ -73,7 +73,8 @@ import {User, Lock, Monitor, Reading} from '@element-plus/icons-vue'
 import {ElMessage} from 'element-plus'
 import {useRouter, useRoute} from 'vue-router'
 import {useUserStore} from '@/stores/modules/user'
-import {login} from '@/api/login'
+import { login } from '@/api/login/index'
+// import {login} from '@/api/login'
 
 const router = useRouter()
 const route = useRoute()
